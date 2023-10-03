@@ -1,0 +1,14 @@
+{
+  "main": "app/*.js",
+  "name": "azure-functions-core-tools-devops-pipeline-example",
+  "scripts": {
+    "start": "func start --javascript",
+    "test": "playwright test"
+  },
+  "dependencies": {
+    "@azure/functions": "^4.0.1",
+    "@playwright/test": "^1.38.1",
+    "azure-functions-core-tools": "^4.0.5390",
+    "playwright-chromium": "^1.38.1"
+  }
+}

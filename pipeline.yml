@@ -1,0 +1,19 @@
+pool:
+  vmImage: ubuntu-latest
+
+variables:
+  - name: CI
+    value: true
+
+steps:
+  - task: NodeTool@0
+    inputs:
+      versionSpec: "18.x"
+  - task: Npm@1
+    inputs:
+      command: custom
+      customCommand: ci
+  - task: Npm@1
+    inputs:
+      command: custom
+      customCommand: test
